@@ -1,27 +1,237 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Sam Meyers | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #263238;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #17324d;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      color: #dce6ef;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #10263b;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #9ec9e8;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      border: 1px solid #e1e5e9;
+    }
+
+    h2 {
+      color: #17324d;
+      margin-top: 0;
+      border-bottom: 2px solid #dce6ef;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      color: #17324d;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #175d91;
+    }
+
+    .project {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e1e5e9;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    footer {
+      background-color: #17324d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 35px 15px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      main {
+        margin: 20px auto;
+        padding: 0 12px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Sam Meyers</h1>
-  <h2> Business Administration Student</h2>
 
-  <h3>About Me</h3>
-  <p>I am a junior Business Administration student at the University of Utah. I want to explore a career in sales. I am interested in Ai and how it can be integrated into CRM tools like Salesforce. I am most interested in CRM tools.</p>
+  <header>
+    <h1>Sam Meyers</h1>
+    <p>Business Administration Student</p>
+  </header>
 
-  <h3>Skills</h3>
-  <ul>
-    <li>Public Speaking</li>
-    <li>Outside Sales/Lead Generation</li>
-    <li>Salesforce</li>
-  </ul>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h3>Projects</h3>
-  <p>AI Business Analysis.</p>
+  <main>
 
-  <h3>Contact</h3>
-  <p>Email: u1514104@utah.edu</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a junior Business Administration student at the University of Utah.
+        I want to explore a career in sales. I am interested in AI and how it can
+        be integrated into CRM tools like Salesforce. I am most interested in CRM
+        tools and how they can help businesses improve customer relationships,
+        sales processes, and decision-making.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Public Speaking</li>
+        <li>Outside Sales and Lead Generation</li>
+        <li>Salesforce</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>AI Business Analysis</h3>
+        <p>
+          A business analysis project exploring how artificial intelligence can
+          be used to improve business processes and support better decision-making.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Sales Performance Analysis</h3>
+        <p>
+          A project focused on analyzing sales metrics such as conversion rates,
+          lead generation, and customer demographics to identify trends and
+          opportunities for improving sales performance.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>CRM Strategy and Customer Relationships</h3>
+        <p>
+          An exploration of how businesses can use CRM systems to manage customer
+          information, strengthen relationships, and improve the effectiveness
+          of their sales processes.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Market Research and Business Strategy</h3>
+        <p>
+          A business research project examining customer needs, market trends,
+          and competitive positioning to develop recommendations for business
+          growth and strategic decision-making.
+        </p>
+      </div>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:u1514104@utah.edu">u1514104@utah.edu</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sam Meyers. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
